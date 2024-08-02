@@ -1,0 +1,106 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSL Colors Web Page</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: hsl(240, 100%, 30%); /* Dark Blue */
+    padding: 1rem 0;
+    color: white;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.color-section {
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.hsl-blue {
+    background-color: hsl(240, 100%, 50%); /* Blue */
+}
+
+.hsl-green {
+    background-color: hsl(120, 100%, 50%); /* Green */
+}
+
+.hsl-yellow {
+    background-color: hsl(60, 100%, 50%); /* Yellow */
+    color: black;
+}
+
+.hsl-red {
+    background-color: hsl(0, 100%, 50%); /* Red */
+}
+
+h1 {
+    margin-top: 0;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="color-section hsl-blue">
+            <h1>Welcome to Our Website</h1>
+            <p>This is the home section. Enjoy browsing!</p>
+        </section>
+        <section id="about" class="color-section hsl-green">
+            <h1>About Us</h1>
+            <p>Learn more about what we do and our mission.</p>
+        </section>
+        <section id="services" class="color-section hsl-yellow">
+            <h1>Our Services</h1>
+            <p>Discover the range of services we offer.</p>
+        </section>
+        <section id="contact" class="color-section hsl-red">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us through this section.</p>
+        </section>
+    </main>
+</body>
+</html>

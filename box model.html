@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #0f8f88;
+            border: 2px solid #458655;
+        }
+        .box {
+            margin: 15px 0;
+            padding: 20px;
+            border: 5px solid #48692e;
+            background-color: #ffffff;
+            color: #333333;
+            text-align: center;
+        }
+        .box.small {
+            width: 100px;
+        }
+        .box.medium {
+            width: 200px;
+        }
+        .box.large {
+            width: 300px;
+        }
+        .box p {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Box Model Example</h1>
+        <div class="box small">
+            <p>Small Box</p>
+        </div>
+        <div class="box medium">
+            <p>Medium Box</p>
+        </div>
+        <div class="box large">
+            <p>Large Box</p>
+        </div>
+        <p>This page demonstrates the CSS box model properties: margin, border, padding, and content. Each box has different sizes to show how padding, border, and margin affect the layout.</p>
+    </div>
+</body>
+</html>
