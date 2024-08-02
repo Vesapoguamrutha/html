@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Properties Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .box {
+            width: 150px;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #127391;
+            background-color: #565f74;
+            overflow: auto; /* Default overflow property */
+        }
+        .box-content {
+            width: 100%;
+            height: 400px; /* Content height larger than the box to demonstrate scrolling */
+            background-color: #e0e0e0;
+        }
+        .scroll-x {
+            overflow-x: scroll; /* Horizontal scrolling */
+        }
+        .scroll-y {
+            overflow-y: scroll; /* Vertical scrolling */
+        }
+        .scroll-both {
+            overflow: scroll; /* Scrolls both horizontally and vertically */
+        }
+        .scroll-none {
+            overflow: hidden; /* Hides overflow content */
+        }
+        .custom-scroll {
+            overflow: auto; /* Default auto overflow */
+            scrollbar-width: thin; /* Firefox: Thin scrollbar */
+            scrollbar-color: #8b3636e1 #e0e0e0; /* Firefox: Scrollbar color */
+        }
+        .custom-scroll::-webkit-scrollbar {
+            width: 12px; /* Chrome/Safari: Width of the scrollbar */
+        }
+        .custom-scroll::-webkit-scrollbar-track {
+            background: #7a2424; /* Chrome/Safari: Track color */
+        }
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background: #7a2323; /* Chrome/Safari: Thumb color */
+            border-radius: 6px; /* Chrome/Safari: Thumb border radius */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>CSS Scroll Properties Example</h2>
+
+        <div class="box scroll-x">
+            <h4>Horizontal Scrolling</h4>
+            <div class="box-content">
+                <p>This box allows horizontal scrolling when content overflows.</p>
+            </div>
+        </div>
+
+        <div class="box scroll-y">
+            <h4>Vertical Scrolling</h4>
+            <div class="box-content">
+                <p>This box allows vertical scrolling when content overflows.</p>
+            </div>
+        </div>
+
+        <div class="box scroll-both">
+            <h4>Both Directions Scrolling</h4>
+            <div class="box-content">
+                <p>This box allows scrolling both horizontally and vertically.</p>
+            </div>
+        </div>
+
+        <div class="box scroll-none">
+            <h4>No Scrolling</h4>
+            <div class="box-content">
+                <p>This box hides overflow content and does not show scrollbars.</p>
+            </div>
+        </div>
+
+        <div class="box custom-scroll">
+            <h4>custom-scroll</h4>
+            <div class="box-content">
+                <p>This box has custom scrollbar styling for better aesthetics.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Property Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .box {
+            width: 200px;
+            height: 150px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #07b354;
+            background-color: #0e8882;
+            overflow: hidden; /* Change this to visible, hidden, scroll, or auto to see the effect */
+        }
+        .box-content {
+            height: 300px; /* Content height larger than the box to demonstrate overflow */
+            background-color: #88941b;
+            overflow: visible; /* Content overflow property (for demonstration) */
+        }
+        .box.scroll {
+            overflow: scroll; /* Scroll bars will appear when content overflows */
+        }
+        .box.auto {
+            overflow: auto; /* Scroll bars will appear when necessary */
+        }
+        .box.visible {
+            overflow: visible; /* Content will overflow beyond the box */
+        }
+        .box.hidden {
+            overflow: hidden; /* Content will be clipped and not visible */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Overflow Property Example</h1>
+        <div class="box visible">
+            <h2>Visible Overflow</h2>
+            <div class="box-content">
+                <p>Content is visible beyond the container's boundaries.</p>
+            </div>
+        </div>
+        <div class="box hidden">
+            <h2>Hidden Overflow</h2>
+            <div class="box-content">
+                <p>Content is clipped and not visible beyond the container's boundaries.</p>
+            </div>
+        </div>
+        <div class="box scroll scroll">
+            <h2>Scroll Overflow</h2>
+            <div class="box-content">
+                <p>Content can be scrolled horizontally and vertically if it overflows.</p>
+            </div>
+        </div>
+        <div class="box auto auto">
+            <h2>Auto Overflow</h2>
+            <div class="box-content">
+                <p>Scroll bars will appear only if the content overflows.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

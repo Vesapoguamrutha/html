@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Margin Properties Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            height: 1000px; /* Large height to enable scrolling */
+            width: 100%;
+            background-color: #e0e0e0;
+        }
+        .section {
+            height: 150px;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            border: 2px solid #4CAF50;
+        }
+        .highlight {
+            scroll-margin: 50px; /* Space around the element when scrolled into view */
+            border: 2px dashed #FF5722;
+            background-color: #FFC107;
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .scroll-target {
+            margin-top: 50px;
+            padding: 10px;
+            background-color: #FFEB3B;
+            border: 2px solid #FFC107;
+        }
+        .scroll-link {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .scroll-link:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#section-2" class="scroll-link">Go to Section 2</a>
+        <a href="#section-3" class="scroll-link">Go to Section 3</a>
+        <a href="#section-4" class="scroll-link">Go to Section 4</a>
+
+        <div id="section-1" class="section">
+            <h2>Section 1</h2>
+            <p>Content of section 1.</p>
+        </div>
+
+        <div id="section-2" class="section highlight">
+            <h2>Section 2</h2>
+            <p>Content of section 2. Notice the scroll margin which ensures this section is well spaced when scrolled into view.</p>
+        </div>
+
+        <div id="section-3" class="section">
+            <h2>Section 3</h2>
+            <p>Content of section 3.</p>
+        </div>
+
+        <div id="section-4" class="section">
+            <h2>Section 4</h2>
+            <p>Content of section 4. Scroll margin here ensures this section is spaced when viewed.</p>
+        </div>
+
+        <div class="scroll-target">
+            <p>This is a target for scrolling.</p>
+        </div>
+    </div>
+</body>
+</html>
